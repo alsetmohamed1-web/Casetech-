@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="ctShieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#06B6D4" />
+      <stop offset="45%" stopColor="#8B5CF6" />
+      <stop offset="100%" stopColor="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="ctTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#06B6D4" />
+      <stop offset="50%" stopColor="#8B5CF6" />
+      <stop offset="100%" stopColor="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="shieldBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.9" />
+      <stop offset="100%" stopColor="#A855F7" stopOpacity="0.6" />
+    </linearGradient>
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Behind Icon -->
+  <circle cx="95" cy="90" r="55" fill="#8B5CF6" opacity="0.25" filter="url(#glowEffect)" />
+
+  <!-- Shield Mascot Vessel -->
+  <g transform="translate(35, 30)">
+    <!-- Shield Outer Silhouette -->
+    <path
+      d="M60 10 L100 25 C100 65 82 100 60 115 C38 100 20 65 20 25 L60 10 Z"
+      fill="#0B0F19"
+      stroke="url(#shieldBorderGrad)"
+      stroke-width="4"
+      stroke-linejoin="round"
+    />
+
+    <!-- Shock Absorber Armor Ribs -->
+    <path
+      d="M36 36 L48 36 M84 36 L72 36 M28 62 L40 62 M92 62 L80 62 M40 88 L52 88 M80 88 L68 88"
+      stroke="#06B6D4"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      opacity="0.7"
+    />
+
+    <!-- Stylized Monogram C and T -->
+    <!-- 'C' contour -->
+    <path
+      d="M57 44 H42 C36.5 44 32 48.5 32 54 V74 C32 79.5 36.5 84 42 84 H57"
+      stroke="url(#ctShieldGrad)"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- 'T' crossbar and spine -->
+    <path
+      d="M63 44 H88 M75 44 V84"
+      stroke="url(#ctShieldGrad)"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Smart Tech Aperture Core / Sensor -->
+    <circle cx="60" cy="64" r="5" fill="#38BDF8" />
+    <circle cx="60" cy="64" r="2" fill="#FFFFFF" />
+
+    <!-- Top Badge Dot -->
+    <circle cx="98" cy="22" r="4.5" fill="#F59E0B" stroke="#0B0F19" stroke-width="2" />
+  </g>
+
+  <!-- Typography: Arabic Brand Name "كيستيك" -->
+  <text
+    x="185"
+    y="96"
+    font-family="'Cairo', 'Segoe UI', system-ui, sans-serif"
+    font-size="60"
+    font-weight="900"
+    fill="#FFFFFF"
+    letter-spacing="-1"
+  >
+    كيستيك
+  </text>
+
+  <!-- Divider Bar -->
+  <line x1="375" y1="52" x2="375" y2="108" stroke="#334155" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Typography: English Brand Name "CaseTech" -->
+  <text
+    x="395"
+    y="95"
+    font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+    font-size="44"
+    font-weight="800"
+    fill="url(#ctTextGrad)"
+    letter-spacing="1"
+  >
+    CaseTech
+  </text>
+
+  <!-- Brand Tagline / Subtitle -->
+  <text
+    x="188"
+    y="132"
+    font-family="'Cairo', system-ui, sans-serif"
+    font-size="16"
+    font-weight="600"
+    fill="#94A3B8"
+  >
+    حماية ذكية <tspan fill="#38BDF8">·</tspan> تصاميم تواكب شخصيتك <tspan fill="#64748B">|</tspan> <tspan font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#38BDF8" font-weight="700">Next-Gen Shockproof Gear</tspan>
+  </text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="ctIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#06B6D4" />
+      <stop offset="45%" stopColor="#8B5CF6" />
+      <stop offset="100%" stopColor="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="ctBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#38BDF8" />
+      <stop offset="100%" stopColor="#A855F7" />
+    </linearGradient>
+    <filter id="iconGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="100" cy="100" r="75" fill="#8B5CF6" opacity="0.25" filter="url(#iconGlow)" />
+
+  <!-- Background Base Vessel -->
+  <rect x="10" y="10" width="180" height="180" rx="44" fill="#0A0E17" stroke="#1E293B" stroke-width="2.5" />
+
+  <!-- Shield Shape -->
+  <path
+    d="M100 26 L156 46 C156 102 131 150 100 172 C69 150 44 102 44 46 L100 26 Z"
+    fill="#0F172A"
+    stroke="url(#ctBorderGrad)"
+    stroke-width="5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Armor Ribs -->
+  <path
+    d="M66 64 L82 64 M134 64 L118 64 M56 98 L72 98 M144 98 L128 98 M72 134 L88 134 M128 134 L112 134"
+    stroke="#06B6D4"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    opacity="0.75"
+  />
+
+  <!-- Monogram C -->
+  <path
+    d="M96 74 H74 C66 74 60 80 60 88 V114 C60 122 66 128 74 128 H96"
+    stroke="url(#ctIconGrad)"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Monogram T -->
+  <path
+    d="M104 74 H140 M122 74 V128"
+    stroke="url(#ctIconGrad)"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Center Aperture Core / Camera Sensor -->
+  <circle cx="100" cy="101" r="7" fill="#38BDF8" />
+  <circle cx="100" cy="101" r="3" fill="#FFFFFF" />
+
+  <!-- Active Status Dot -->
+  <circle cx="152" cy="42" r="6" fill="#F59E0B" stroke="#0A0E17" stroke-width="2.5" />
+</svg>
